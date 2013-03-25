@@ -16,7 +16,8 @@
 
     {# source files #}
     {% for url in suite.js_files %}
-    <script src="{{ url }}"></script>
+    <!-- TODO: fix this in the view where the URLs are being constructed. -->
+    <script src="/{{ url }}"></script>
     {% endfor %}
 
     {# static files #}
